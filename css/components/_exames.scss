@@ -1,0 +1,21 @@
+.examesText {
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    align-items: center;
+    display: flex;
+
+    padding: 0px 24px;
+
+    @include responsive(s) {
+        padding: 240px 12px !important;
+
+
+        .p-mtMobile {
+            margin-top: 20px !important;
+        }
+    }
+    
+
+    height: 50vh;
+}

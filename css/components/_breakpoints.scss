@@ -1,0 +1,39 @@
+// BREAKPOINTS
+
+$container-xxl: 1440px;
+$container-xl: 1200px;
+$container-lg: 992px;
+$container-s: 576px;
+
+// LAYOUT
+
+// Mixins of media query
+
+@mixin responsive($device) {
+  @if $device == xl {
+    // For resolutions upper than 1440px
+    @media screen and (min-width: $container-xxl) {
+      @content;
+    }
+  } @else if $device == l {
+    // For resolutions between 1200px and 1440px
+    @media screen and (max-width: $container-xl) and (min-width: $container-lg) {
+      @content;
+    }
+  } @else if $device == m {
+    // For resolutions between 992px and 1200
+    @media screen and (max-width: $container-lg) and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == s {
+    // For resolutions less than 992PX
+    @media screen and (max-width: $container-lg) {
+      @content;
+    }
+  } @else if $device == xs {
+    // For resolutions less than 576px
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.slider-hero {
+    width: 100%;
+    height: auto;
+
+    img {
+        display: block;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    @include responsive(s) {
+        display: none;
+    }
+}
+
+.slider-hero-mobile {
+    display: none;
+
+    @include responsive(s) {
+        display: flex;
+
+        width: 100%;
+        height: auto;
+    
+        img {
+            display: block;
+    
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

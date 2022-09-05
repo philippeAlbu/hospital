@@ -1,0 +1,98 @@
+.bgContentDayHour {
+    background-color: $blue-500;
+
+    .contentDayHour {
+        max-width: $container-xl;
+        margin: 0 auto;
+    
+        .contentDayHour__item {
+            align-items: flex-start;
+            display: flex;
+    
+            border-right: 1px solid $white-900;
+    
+            h5 {
+                color: $white-900;
+            }
+        }
+    }
+
+    @include responsive(xs) {
+        display: none;
+    }
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 12px 0px;
+
+    @include responsive(s) {
+        display: none;
+    }
+}
+
+.flex {
+    li {
+        font-family: "Outfit";
+        font-weight: 600;
+
+        margin-right: 32px;
+
+        a {
+            color: $black-600 !important;
+        }
+    }
+}
+
+.btn-header {
+    a {
+        background-color: $blue-500;
+        border-radius: 4px;
+        box-shadow: 0px 8px 24px 0px #0570A43D;
+
+
+        color: $white-900 !important;
+
+        font-family: "Outfit";
+        font-weight: 500;
+
+        padding: 12px 36px;
+
+        @include responsive(s) {
+            padding: 12px 16px;
+        }
+    }
+}
+
+.header {
+    display: none;
+
+    @include responsive(m) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    
+        padding: 12px 12px;
+    
+        img {
+            max-width: 56px
+        }
+    }
+    @include responsive(s) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    
+        padding: 12px 12px;
+    
+        img {
+            max-width: 56px
+        }
+    }
+}
